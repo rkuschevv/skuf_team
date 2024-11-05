@@ -13,14 +13,6 @@ templates = Jinja2Templates(directory="templates")
 class Message(BaseModel):
     message: str
 
-# Разрешаем запросы с любого источника (для разработки)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Словарь команд и ответов
 commands = {

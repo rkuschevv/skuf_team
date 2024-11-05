@@ -1,64 +1,126 @@
+/* Основные стили */
 body {
-    background-color: #000;
+    margin: 0;
     font-family: Arial, sans-serif;
-    color: #ffeb3b;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-sizing: border-box;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-header, footer {
-    background-color: #333;
-    padding: 20px;
+header {
+    background: linear-gradient(135deg, #ffffff, #f0f2f5);
+    padding: 15px 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1, footer p {
-    margin: 0;
-    color: #ffeb3b;
+header nav a {
+    color: #3366ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
+
+.parallax {
+    background-image: url('https://livetyping.com/assets/images/blog/finans-0.jpg'); /* Путь к изображению */
+    min-height: 400px;
+    background-attachment: fixed; /* Эффект параллакса */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 20px;
+}
+
 
 main {
-    flex: 1;
-    padding: 20px;
+    padding: 100px 20px 20px;
 }
 
-article {
-    max-width: 800px;
-    margin: 0 auto;
+.section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #3366ff;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #3366ff;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-control.prev {
+    left: 10px;
+}
+
+.slider-control.next {
+    right: 10px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-card {
     text-align: center;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-article p {
-    color: #ffeb3b;
+.contact-card a {
+    color: #3366ff;
+    text-decoration: none;
 }
 
-#chat-container {
-    background-color: #000;
-    color: #ffeb3b;
-    border: 1px solid #ffeb3b;
-}
-
-#chat-box {
-    background-color: #333;
-    color: #ffeb3b;
-    border: 1px solid #ffeb3b;
-}
-
-#chat-input {
-    background-color: #333;
-    color: #ffeb3b;
-    border: 1px solid #ffeb3b;
-}
-
-#send-button {
-    background-color: #ffeb3b;
-    color: #000;
-}
-
-#send-button:hover {
-    background-color: #ffd700;
+footer {
+    background: linear-gradient(135deg, #ffffff, #f0f2f5);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    color: #666666;
 }
