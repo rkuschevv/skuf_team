@@ -25,8 +25,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/rkuschevv/skuf_team.git
-   cd skuf_team
+   git clone https://github.com/rkuschevv/superapp_web.git
+   cd superapp_web
 Установите необходимые зависимости:
 
 bash
